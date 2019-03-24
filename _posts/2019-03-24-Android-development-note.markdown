@@ -115,18 +115,22 @@ android:text="Hello"/>
 > When choosing font sizes for your app, using too many different sizes can be visually distracting and confuse the user as to what information is important. To be consistent with other apps on the platform, you can use the standard set of type sizes provided by the framework: small, medium, or large.
 
 >To use a standard text size (and color), instead of setting the TextView's android:textSize directly, set the android:textAppearance to a predefined theme attribute [1] such as android:textAppearanceLarge:
-``` 
+
+```
 <TextView
     …
     android:textAppearance="?android:textAppearanceLarge" />
-```    
+``` 
+   
 #### 调试步骤：
 
 1. 阅读错误消息
 2. 与可行的代码做对比
 3. 撤消操作
 4. 寻求帮助
+
 #### 硬编码（Hard coding）与wrap_content
+
 ##### 硬编码
 计算机是按照一系列称为程序的指令运行的机器。Android设备便是计算机，应用是程序。
 
