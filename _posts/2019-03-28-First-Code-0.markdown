@@ -10,7 +10,8 @@ Activity 是可以包含用户界面的组件，用于与用户进行交互。
 - 创建和加载相应的布局：
     1. 创建布局在app/src/main/res中创建，最好先创建命名符合的文件夹，再在文件夹中创建布局，这里创建的布局反映了整体界面的样子
     2. 创建的布局文件中需要添加相应的元素，如要在布局中添加一个按钮，需要设定相应的id等参数
-```
+    
+    ```
     //D:\Codes\ActivityTest\app\src\main\res\layout\fist_layout.xml
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
@@ -22,9 +23,9 @@ Activity 是可以包含用户界面的组件，用于与用户进行交互。
         android:text="Button 1"
         />**
     </LinearLayout>
-```
+    ```
     3. 布局创建完成需要在Activity中对布局进行加载 setContenView()
-```
+    ```
     //D:\Codes\ActivityTest\app\src\main\java\com\example\activitytest\FirstActivity.java
     package com.example.activitytest;
 
@@ -39,7 +40,7 @@ Activity 是可以包含用户界面的组件，用于与用户进行交互。
         **setContentView(R.layout.fist_layout);**
         }
     }
-```
+    ```
 - 所有的活动需要在AndroidManifest.xml文件中注册
     >注意每个程序基本都是需要配置主活动，不然无法成功运行程序
     >注册的方法就是在activity标签中加入<intent-filter>标签
